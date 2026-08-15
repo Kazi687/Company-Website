@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi Enterprises Ltd | Creative Digital Agency</title>
+    
+    <!-- Tailwind CSS for Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --bg-dark: #080808;
+            --card-bg: #121212;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
+            scroll-behavior: smooth;
+        }
+        .heading-font { font-family: 'Syne', sans-serif; }
+        
+        .glass-nav {
+            background: rgba(8, 8, 8, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #080808 100%);
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .service-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 210, 255, 0.1);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: black;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter heading-font uppercase">
+                Kazi<span class="text-cyan-400">Enterprises</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#work" class="hover:text-white transition">Work</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+            <a href="mailto:kazienterprisesltd@gmail.com" class="btn-primary px-6 py-2 rounded-full text-sm">HIRE US</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-screen flex flex-col justify-center items-center text-center px-6">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-5xl md:text-8xl font-extrabold heading-font mb-6 leading-tight">
+                WE DESIGN THE <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">FUTURE OF DIGITAL.</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Kazi Enterprises Ltd is a high-performance agency specialized in scaling brands through elite design and strategic development.
+            </p>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
+                <a href="#services" class="btn-primary px-10 py-4 rounded-full text-lg">Our Expertise</a>
+                <a href="#contact" class="border border-gray-700 hover:bg-white hover:text-black px-10 py-4 rounded-full text-lg transition">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="mb-16" data-aos="fade-right">
+            <h2 class="text-cyan-400 font-bold tracking-widest mb-2 uppercase text-sm">Services</h2>
+            <h3 class="text-4xl md:text-5xl font-extrabold heading-font">WHAT WE DO BEST.</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Digital Marketing -->
+            <div class="service-card p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-6 text-cyan-400 text-2xl font-bold">01</div>
+                <h4 class="text-2xl font-bold mb-4 heading-font">Digital Marketing</h4>
+                <p class="text-gray-400">Data-driven growth strategies designed to dominate search rankings and social algorithms.</p>
+            </div>
+
+            <!-- Content Creation -->
+            <div class="service-card p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-6 text-cyan-400 text-2xl font-bold">02</div>
+                <h4 class="text-2xl font-bold mb-4 heading-font">Content Creation</h4>
+                <p class="text-gray-400">Premium visual storytelling that captures attention and builds massive brand authority.</p>
+            </div>
+
+            <!-- UX/UI Design -->
+            <div class="service-card p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-6 text-cyan-400 text-2xl font-bold">03</div>
+                <h4 class="text-2xl font-bold mb-4 heading-font">UX/UI Designing</h4>
+                <p class="text-gray-400">High-converting user interfaces that blend aesthetic beauty with seamless functionality.</p>
+            </div>
+
+            <!-- Web Development -->
+            <div class="service-card p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-6 text-cyan-400 text-2xl font-bold">04</div>
+                <h4 class="text-2xl font-bold mb-4 heading-font">Web Development</h4>
+                <p class="text-gray-400">Custom-built, lightning-fast websites engineered using modern stacks for ultimate performance.</p>
+            </div>
+
+            <!-- Ecom Store Handling -->
+            <div class="service-card p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="500">
+                <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-6 text-cyan-400 text-2xl font-bold">05</div>
+                <h4 class="text-2xl font-bold mb-4 heading-font">Ecom Management</h4>
+                <p class="text-gray-400">End-to-end management of Shopify and WooCommerce stores to scale your sales effortlessly.</p>
+            </div>
+
+            <!-- Brand Building -->
+            <div class="service-card p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="600">
+                <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-6 text-cyan-400 text-2xl font-bold">06</div>
+                <h4 class="text-2xl font-bold mb-4 heading-font">Brand Building</h4>
+                <p class="text-gray-400">Developing cohesive brand identities that resonate with global audiences and endure time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="py-24 border-t border-gray-900 text-center px-6">
+        <div data-aos="zoom-in">
+            <h2 class="text-5xl md:text-7xl font-extrabold heading-font mb-8">READY TO START?</h2>
+            <p class="text-gray-400 mb-10 text-lg">Let's build something extraordinary together.</p>
+            <a href="mailto:kazienterprisesltd@gmail.com" class="text-2xl md:text-4xl font-bold text-cyan-400 hover:text-white transition underline decoration-1 underline-offset-8">
+                kazienterprisesltd@gmail.com
+            </a>
+            <div class="mt-20 text-gray-600 text-sm tracking-widest uppercase">
+                &copy; 2024 Kazi Enterprises Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animation Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+</body>
+</html>
